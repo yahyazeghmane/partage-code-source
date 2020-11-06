@@ -1,0 +1,266 @@
+/* Start Main Rules*/
+@font-face {
+    font-family: 'myfont';
+    src:
+     url('myfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  } 
+
+    body{
+        background-color: #F4F4F4;
+    }
+/* Start Main Rules*/
+/* Start login*/
+
+.login {
+    width: 300px;
+    margin: 100px auto;
+}
+
+.login input {
+    margin-bottom:10px;
+}
+
+.login .form-control {
+    background-color: #EAEAEA;
+}
+
+.login .btn {
+    background-color: #008dde;
+}
+/* End login*/
+
+
+
+
+h1 {
+    font-size: 55px;
+    margin: 40px 0;
+    font-weight: bold;
+    color: #888;
+
+}
+
+
+
+
+.main-table tr:first-child td {
+    background-color: #333;
+    color: #FFF;
+}
+
+
+/*Start Dashboard*/
+.home-stats .stat {
+    background-color: #EEE;
+    padding: 20px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    position: relative; 
+    overflow: hidden;
+
+}
+
+.home-stats .stat a {
+    color:#FFF;
+}
+
+.home-stats .stat i {
+    position: absolute;
+    font-size: 80px;
+    top: 35px;;
+    left: 30px;
+
+}
+.home-stats .stat a:hover {
+    text-decoration: none;
+}
+.home-stats .stat .info{
+float: right;
+}
+
+.home-stats {
+    margin-bottom:20px;
+    color: #FFF;
+}
+
+.home-stats .st-members {
+    background-color: #25CCF7;
+}
+.home-stats .st-offre-emp {
+    background-color: #0652DD;
+}
+.home-stats .st-appel-offre {
+    background-color: #1B9CFC;
+}
+.home-stats .st-bourse-etude {
+    background-color: #5758BB;
+}
+
+.home-stats .stat span {
+    display: block;
+    font-size: 50px;
+}
+
+.latest {
+    margin-top : 20px;
+    margin-top : 20px;
+
+}
+
+.latest .toggle-info {
+    color:  #999;
+    cursor: pointer;
+}
+
+.latest .toggle-info:hover {
+    color:#444;
+}
+a {
+    color: #FFF;
+}
+a:hover {
+    text-decoration: none;
+
+}
+
+.latest-users {
+    margin-bottom: 0px;
+}
+
+.latest-users li {
+    padding: 5px;
+    overflow: hidden;
+
+}
+
+.latest-users li:nth-child(odd){
+    background-color: #EEE;
+}
+
+.latest-users .btn-success, .btn-info {
+    padding: 2px 5px;
+}
+
+.latest-users .btn-info{
+    margin-right: 5px;
+}
+.card-custom {
+    margin-bottom : 10px;
+}
+/*End Dashboard*/
+
+
+/*Start Category Page*/
+    .categories .cat {
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    .categories .cat:hover .hidden-buttons {
+        right: 10px;
+    }
+
+    .categories .cat:hover {
+        background-color: #EEE;
+    }
+    .categories hr {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .categories .card-header {
+        color: #959595;
+        font-weight: bold;
+    }
+
+    .categories .cat .hidden-buttons {
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        position: absolute;
+        top: 15px;
+        right: -128px;
+        overflow: hidden;
+    }
+
+    .categories .cat .hidden-buttons a {
+        margin-right: 5px;
+    }
+    .categories .cat h3 {
+        margin : 0;
+        cursor: pointer;
+        font-weight: bold;
+        color: #6A6A6A;
+    }
+
+    .categories .cat p{
+        margin: 10px 0;
+        color: #707070;
+    }
+    .categories .cat:last-of-type ~ hr  {
+        display: none;
+    }
+
+    .categories .cat .visibility{
+        background-color: #eb4d4b;
+        color: #FFF;
+        padding: 4px 6px;
+        margin-right: 2px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+    }
+
+    .categories .cat .commenting {
+        background-color: #ff7979;
+        color: #FFF;
+        padding: 4px 6px;
+        margin-right: 2px;
+        border-radius: 8px;
+    }
+    .categories .cat .ads {
+        background-color:#22a6b3;
+        color: #FFF;
+        padding: 4px 6px;
+        margin-right: 2px;
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+
+    .categories .card-body {
+        padding: 0;
+    }
+
+    .categories hr {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .categories .option a {
+        color: #888;
+        text-decoration: none;
+    }
+    .categories .option span {
+        color: #888;
+        cursor: pointer;
+    }
+    .categories .option .active {
+        color: #F00;
+        font-weight: bold;
+        
+    }
+
+    .categories .add-category{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+/*End Category Page*/
+
+
+
+@font-face  {
+    font-family: 'Audiowide-Regular';
+    src: url('Audiowide-Regular.ttf') format('truetype') !important; /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  } 

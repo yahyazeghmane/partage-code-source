@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel='stylesheet' href="layout/css/bootstrap.min.css"/>
+  <link rel='stylesheet' href="layout/css/backend.css"/>
+  <link rel='stylesheet' href="layout/css/all.css"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="dashboard.php">Gestoon Stock</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="stock.php">Stock</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="entree.php">Entré</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sortie.php">Sortie</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="categories.php">Categorie</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="fournisseur.php">Fournisseur</a>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Commande
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="commande.php">Nouveau Commande</a>
+          <a class="dropdown-item" href="consultercmd.php">Consulter Commande</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="reception.php">Reception</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          yahya
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="members.php?do=Edit&userid=<?php echo $_SESSION['ID'] ?>">Edit Profile</a>
+          <a class="dropdown-item" href="dashboard.php">Dashboard</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+   
+  </div>
+</nav>
+        <h3 class='text-center'>Gestions des commandes</h3>
+            <div class="container" style="margin-top:30px;margin-bottom: 30px;">
+              <div class="row">
+                <div class="col-sm-6">
+                  
+                    <form class="" action="/action_page.php">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group" style="">
+                          <label for="code">N° du commande:</label><br/>
+                          <input type="text" class="form-control" placeholder="Enter le N° CMD" id="code">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group" style="">
+                          <label for="dte">Date:</label><br/>
+                          <input type="date" class="form-control" placeholder="" id="dte">
+                          </div>
+                        </div>
+                      </div>
+                    
+                       <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                          <label for="frn">Fournisseur:</label>
+                          <select class="form-control" id="frn">
+                            <option>F 01</option>
+                            <option>F 02</option>
+                            <option>F 03</option>
+                            <option>F 04</option>
+                          </select>
+                          </div>
+                        </div>
+                       </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <button type="submit" class="btn btn-primary">Commander</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <form class="" action="/action_page.php">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group" style="">
+                          <div class="form-group" style="">
+                            <label for="code">Code:</label><br/>
+                            <select class="form-control" id="code">
+                              <option>Art 01</option>
+                              <option>Art 02</option>
+                              <option>Art 03</option>
+                              <option>Art 04</option>
+                            </select>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="form-group" style="">
+                          <label for="desgn">Designation:</label>
+                            <input type="dqte" class="form-control" placeholder="" id="desgn">
+                          </div>
+                        </div>
+                      </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group" style="">
+                          <label for="cat">Categorie:</label>
+                          <input type="dqte" class="form-control" placeholder="" id="cat">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group" style="">
+                          <label for="unt">Unité:</label>
+                          <input type="dqte" class="form-control" placeholder="" id="unt">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group" style="">
+                          <label for="prx">Prix:</label>
+                          <input type="dqte" class="form-control" placeholder="" id="prx">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group" style="">
+                          <label for="qte">Quantié:</label>
+                          <input type="dqte" class="form-control" placeholder="0" id="qte">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <button type="submit" class="btn btn-primary">Ajouter</button>
+                        </div>
+                    </div>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+           
+          
+            <div class="container-fluid" style="border: solid 1px #aaa; margin-bottom: 20px;">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="">
+                          <div class="table-responsive">
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>Control</th>
+                                  <th>N° CMD</th>
+                                  <th>Code Article</th>
+                                  <th>Quantié</th>
+                                  <th>Prix</th>
+                                  <th>Montant</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                  <button type="button" class="btn btn-info btn-sm"><img src="images/edit.png" style="width: 30px ; height: 30px;"></button> <button type="button" class="btn btn-danger btn-sm"> <img src="images/delete.png" style="width: 30px ; height: 30px;"></button>
+                                 </td>
+                                  <td>CMD 001</td>
+                                  <td>Artl 001</td>
+                                  <td>10</td>
+                                  <td>39000</td>
+                                  <td>390000</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+ 
+                        </div>
+                    </div>
+                </div>
+    <script src='layout/js/jquery-3.4.1.min.js'></script> 
+    <script src='layout/js/bootstrap.min.js'></script> 
+    <script src='layout/js/backend.js'></script> 
+    <script src='layout/js/fontawesome.js'></script>
+</body>
+</html>
+
+       

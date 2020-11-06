@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+  <link rel='stylesheet' href="layout/css/bootstrap.min.css"/>
+  <link rel='stylesheet' href="layout/css/backend.css"/>
+  <link rel='stylesheet' href="layout/css/all.css"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="dashboard.php">Gestoon Stock</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="stock.php">Stock</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="entree.php">Entré</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sortie.php">Sortie</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="categories.php">Categorie</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="fournisseur.php">Fournisseur</a>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Commande
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="commande.php">Nouveau Commande</a>
+          <a class="dropdown-item" href="consultercmd.php">Consulter Commande</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="reception.php">Reception</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          yahya
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="members.php?do=Edit&userid=<?php echo $_SESSION['ID'] ?>">Edit Profile</a>
+          <a class="dropdown-item" href="dashboard.php">Dashboard</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="logout.php">Logout</a>
+        </div>
+      </li>
+    </ul>
+   
+  </div>
+</nav>
+<h3 class='text-center'><i class="fas fa-cogs"></i> Gestion Categories</h3>
+<div class="container categories">
+    <div class="card card-default">
+        <div class="card-header">
+        <i class="fas fa-tasks"></i> Gestion Categories
+            <div class="option float-right">
+            <i class="fas fa-sort"></i> Ordre : [
+                <a class="" href="?sort=ASC">Asc</a> |
+                <a class=""  href="?sort=DESC">Desc</a> ]
+            </div>
+        </div>
+        <div class="card-body">
+            <div class='cat'>
+                 <div class='hidden-buttons'>
+                     '<a href="#" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i>Modifier</a>
+                     '<a href="#" class="confirm btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i>Supprimer</a>
+                 </div>
+                 <h3> Telephone</h3>
+                 <div class='full-view'>
+                           
+                 </div>
+            </div>
+                <hr>
+             
+        </div>
+    </div>
+    <a href="#" class="add-category btn btn-primary"><i class="fa fa-plus"></I>Ajouter une Categorie</a>
+</div>
+
+<script src='layout/js/jquery-3.4.1.min.js'></script> 
+<script src='layout/js/bootstrap.min.js'></script> 
+<script src='layout/js/backend.js'></script> 
+<script src='layout/js/fontawesome.js'></script>
+</body>
+</html>
